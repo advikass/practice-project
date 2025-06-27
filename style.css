@@ -7,75 +7,92 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f4f4f4;
-  display: flex;
+  
+  height: 80%;
+  width: 100%;
+ 
+
+  
+}
+.container{
+  width: 28%;
+  margin:90px auto;
+  height:70%;
+  padding:0 15px;
+  border-radius: 5px;
+
+}
+.form-container{
+   width:100%;
+
+ 
+}
+form{
+  display:flex;
+  flex-direction: column;
+  margin:5px 0px;
+
+}
+.form-container label{
+  width:100%;
+  margin:4px 0;
+ 
+}
+.form-container input[type="text"],input[type="password"]{
+  width: 100%;
+  height:40px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #0e0a0a;
+  border-radius: 3px;
+}
+.btn{
+  width:100%;
+  height:35px;
+  margin:20px 0;
+  font-size: 16px;
+  cursor:pointer;
+  background-color: #130f0b;
+  color:#eae2e2;
+  box-shadow: #f4f4f4;
+}
+.header {
+  display:flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
+  
 }
-
-ul {
-  list-style-type: none;
+.forgot-password{
+  float:right;
+  font-size: 12px;
+  text-decoration: none;
+  margin-top: 10px 0px;
+  color:rgb(12, 10, 7)
+ 
 }
-
-.container {
-  width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.footer{
+  font-size: 10px;;
+  opacity:0.9;
+  margin-top: 20px 1px;
 }
-
-.container h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+.image{
+  display:flex;
+  align-items:center ;
+  justify-content: space-evenly;
+  
+  height:50px;
+  margin:10px 0;
+  
 }
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.footer .image img{
+  width:15%;
+  height:100%;
+  border-radius:2px;
+  padding:8px 2px;
+  transition: 0.3s ease;
+ 
 }
-
-.form-control {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-control label {
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #555;
-}
-
-.form-control input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.form-control input:focus {
-  border-color: #007bff;
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-.btn {
-  padding: 10px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #0056b3;
+.footer a{
+  float:right;
+  color:black;
 }

@@ -5,12 +5,12 @@
 }
 
 html,body {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   font-family: "Montserrat", sans-serif;
 }
 .main{
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   position:relative;
 
@@ -58,19 +58,19 @@ html,body {
   display: none;
 }
 .content{
-  height: calc(100% - 60px);
+  
   width: 100%;
  
   display : flex;
   position: relative;
 }
 .left{
-  height:100%;
+  height:auto;
   width: 55%;
   padding:50px 50px;
 }
 .right{
-  height:100%;
+  height:auto;
   width: 45%;
  
 }
@@ -117,7 +117,7 @@ html,body {
  
   .nav h2{
     font-size: 4vw;
-    padding-left: 20px;
+    padding-left: 10px;
   }
   .nav h4{
     display:none; 
@@ -131,12 +131,12 @@ html,body {
     padding: 2vw;
   } 
   .content{
-    height:auto;
+    /* height:auto; */
     flex-direction: column;
   }
   .left{
     width:100%;
-    height:auto;
+    min-height:50vh;
     padding: 20px 30px;
   }
   
@@ -146,16 +146,21 @@ html,body {
   }
   .right img {
     width: 100%;
-    height: auto;  
-    display: block; 
+    height: 100%;
+    object-fit: cover;  
+   display:block;
+
   }
   .left h2{
-    font-size: 7vw;
-    margin-top: 0px;
+    font-size: 8vw;
+    margin-top: 6px;
   }
   .left p{
-    font-size: 3.5vw;
-    width:100%  
+    margin-top: 8px;
+    margin-bottom: 40px; 
+    font-size: 3.8vw;
+    width:100% 
+    
   }
   .btn{
     font-size: 3vw;

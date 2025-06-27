@@ -158,13 +158,13 @@ html,body {
   .left p{
     margin-top: 8px;
     margin-bottom: 40px; 
-    font-size: 3.8vw;
+    font-size: 4vw;
     width:100% 
     
   }
   .btn{
     font-size: 3vw;
-    padding: 1vw 5vw;
+    padding: 2vw 5vw;
     font-weight: 800;
     margin-bottom: 20px;
   }
